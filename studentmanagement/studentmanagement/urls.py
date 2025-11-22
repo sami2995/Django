@@ -22,8 +22,8 @@ from studentinfo.views import  home,about,contact
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('',home),
-    path('about/',about),
-    path('contact/',contact)
+    path('',home,name='home url'),
+    path('about/',about,name='about url'),
+    path('contact/',contact,name='contact url')
 
 ]
